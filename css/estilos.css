@@ -15,11 +15,24 @@ img[class^="imagen"] {
 
 header {
   margin: 0 auto;
+  width: 100%;
   height: 5em;
   background: #5b7989;
   color: white;
   border-radius: 10px 10px 0px 0px;
-  width: 100%;
+  animation: cabeza 1s;
+}
+
+@-webkit-keyframes cabeza {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
 
 header h1 {
